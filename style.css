@@ -1,0 +1,210 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background: #ffffff;
+    margin: 15px;
+    width: 340px;
+}
+
+.preview {
+    /* background: #f9fafd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; */
+    margin: auto;
+}
+
+.layout-placeholder {
+    font-size: 18px;
+}
+
+.accordion {
+    background: #e6ebff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.accordion-title {
+    color: #0033ff;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border: 1px solid #d6dae4;
+    border-radius: 3px;
+    padding: 6px 12px;
+    height: 38px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.radio-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-top: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    overflow: hidden;
+    max-width: 450px;
+    min-height: 450px;
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .profile-logo {
+    height: 65px;
+    width: 65px;
+}
+
+.card-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card p {
+    margin: 10px 20px;
+    line-height: 1.4;
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card-profile {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    left: 3%;
+}
+
+.card-profile .logo {
+    border-radius: 0;
+    position: absolute;
+    left: 85%;
+}
+
+.card-date {
+    font-size: 14px;
+}
+
+.card-profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.card-likes {
+    display: flex;
+}
+
+.card-likes .like {
+    height: 17px;
+    width: 17px;
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-source {
+    margin: 10px;
+    font-size: 12px;
+    color: #808080;
+}
+
+#load-more {
+    margin: 20px auto;
+    display: block;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#load-more:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Dark Theme */
+.light-theme {
+    background-color: #f5f5f5 !important;
+    color: #333;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #333 !important;
+    color: #fff;
+}
+
+#cardBackgroundColor:focus~.card {
+    background-color: var(--color);
+}
